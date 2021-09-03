@@ -3,7 +3,7 @@ package ua.com.alevel.tasks;
 import java.util.Arrays;
 
 public class SecondTask {
-    public String getCharacterStatistics(String input) {
+    public static String getCharacterStatistics(String input) {
         StringBuilder sb = new StringBuilder();
         char[] chars = input.toCharArray();
         Arrays.sort(chars);

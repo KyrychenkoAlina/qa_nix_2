@@ -10,15 +10,18 @@ public class SecondTask {
 
         char c = chars[0];
         int counter = 0;
-        for (int i = 0; i < chars.length; ++i) {
-            char now = chars[i];
-            if (now == c) {
+        for (char chr : chars) {
+            if (chr == c) {
                 counter++;
             } else {
                 sb.append(c + " " + counter + "\n");
-                counter = 0;
-                c = now;
+                counter = 1;
+                c = chr;
             }
+        }
+        if (counter != 0)
+        {
+            sb.append(c + " " + counter);
         }
         return sb.toString();
     }

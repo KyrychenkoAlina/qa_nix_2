@@ -29,7 +29,8 @@ public class Main {
                 }
                 break;
                 case "3": {
-                    //TODO: Task3
+                     int result = ThirdTask.classtime(input);
+                    System.out.println(result);
                 }
                 break;
             }
